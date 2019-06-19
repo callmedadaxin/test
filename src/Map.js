@@ -8,7 +8,9 @@ class Map {
   addWindow(item) {
     const win = new window.BMapLib.SearchInfoWindow(
       this.map,
-      `<a href="/list/${item.place}">点击查看图片列表</a>`,
+      `<a href="https://callmedadaxin.github.io/test-/build/?place=${
+        item.place
+      }">点击查看图片列表</a>`,
       {
         title: item.place, //标题
         width: 290, //宽度
